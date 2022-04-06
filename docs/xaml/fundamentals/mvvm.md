@@ -72,13 +72,14 @@ namespace XamlSamples
                 }
             }
         }
-
+        
+        private Timer timer;
         public ClockViewModel()
         {
             this.DateTime = DateTime.Now;
             
             // Update the DateTime property every second.
-            Timer timer = new Timer(new TimerCallback((s) => this.DateTime = DateTime.Now), null, 0, 1000);
+            Timer = new Timer(new TimerCallback((s) => this.DateTime = DateTime.Now), null, 0, 1000);
         }
     }
 }
