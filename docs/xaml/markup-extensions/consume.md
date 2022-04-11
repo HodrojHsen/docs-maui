@@ -258,7 +258,7 @@ The following XAML example shows how to use `x:Array` to add items to a `ListVie
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <BoxView Color="{Binding}"
+                    <BoxView MinimumHeightRequest="20" Color="{Binding}"
                              Margin="3" />
                 </ViewCell>
             </DataTemplate>
